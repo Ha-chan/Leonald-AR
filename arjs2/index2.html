@@ -16,13 +16,8 @@
         <a-assets>
             <a-asset-item id="obj" src="leonald.glb"></a-asset-item> <!-- objファイル -->
         </a-assets>
-        <!-- マーカーを登録（プリセットされている「hiro」マーカー） -->
-        <a-marker preset="hiro">
-            <!-- マーカーの場所に箱を置く（見やすいようにワイヤーフレーム表示） -->
-            <a-box position="0 0.5 0" wireframe="true"></a-box>
-        </a-marker>
         <!-- マーカーを登録（プリセットされている「人」マーカー） -->
-        <a-marker preset="kanji">
+        <a-marker preset="hiro">
             <!-- マーカーの場所に OBJ 形式の 3DCG を置く -->
             <a-entity gltf-model="#obj"
                 animation="property:rotation; from:0 0 0; to:0 360 0; dur:3000; easing:linear; loop:true;">
