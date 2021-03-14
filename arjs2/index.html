@@ -7,7 +7,7 @@
 </head>
 <body style="margin:0px; overflow:hidden;">
   <!-- A-Frame ライブラリの読み込み -->
-  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
   <!-- AR.js ライブラリの読み込み -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   
@@ -29,12 +29,12 @@
   <!-- マーカーを登録（プリセットされている「人」マーカー） -->
   <a-marker preset="kanji">
     <!-- マーカーの場所に OBJ 形式の 3DCG を置く -->
-    <a-obj-model
-      src="#obj"
-      scale="0.005 0.005 0.005"
-      position="0 0.5 0"
-      animation="property:rotation; from:0 0 0; to:0 360 0; dur:3000; easing:linear; loop:true;">
-    </a-obj-model>
+    
+    <a-marker preset="kanji">
+      <!-- マーカーの場所に OBJ 形式の 3DCG を置く -->
+      <a-entity gltf-model="#obj"
+          animation="property:rotation; from:0 0 0; to:0 360 0; dur:3000; easing:linear; loop:true;">
+      </a-entity>
   </a-marker>
  
   <!-- AR用のカメラを置く -->
