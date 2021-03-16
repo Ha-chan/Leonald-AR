@@ -19,7 +19,8 @@
         <!-- マーカーを登録（プリセットされている「人」マーカー） -->
         <a-marker type='pattern' url='arjs2/soukatu.patt' marker>
             <!-- マーカーの場所に OBJ 形式の 3DCG を置く -->
-            <a-entity gltf-model="#obj" scale="1 1 1" rotation="-20 0 0" animation-mixer>
+            <a-entity gltf-model="#obj"
+                animation="property:rotation; from:0 0 0; to:0 360 0; dur:3000; easing:linear; loop:true;">
             </a-entity>
         </a-marker>
         <!-- AR用のカメラを置く -->
