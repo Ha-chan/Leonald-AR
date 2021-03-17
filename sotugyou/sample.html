@@ -20,24 +20,23 @@
     </div>
 
 <!-- デバッグ用の画面表示、VR用のボタンをそれぞれ非表示に -->
-<a-scene embedded arjs="debugUIEnabled:false;" vr-mode-ui="enabled: false">
-        <!-- Assetの用意　 -->
-        <a-assets>
-            <img id="kusudama" src="sotugyou/kusudama.gif">
-        </a-assets>
+        <a-scene embedded arjs="debugUIEnabled:false;" vr-mode-ui="enabled: false">
+                <!-- Assetの用意　 -->
+                <a-assets>
+                    <img id="kusudama" src="sotugyou/kusudama.gif">
+                </a-assets>
 
-<!-- 『.patt』ファイルを読み込む -->
-    <a-marker preset="custom" type="pattern" url="pattern-soukatsu.patt" >
-    <a-entity
-            geometry="primitive: plane;"
-            material="shader:gif; src:#kusudama;
-            color:white;
-            opacity:1"
-            rotation="-90 0 0">
-    </a-entity>
-    </a-marker>
-    <a-entity camera></a-entity>
-</a-scene>
-<script>
+        <!-- 『.patt』ファイルを読み込む -->
+            <a-marker preset="custom" type="pattern" url="pattern-soukatsu.patt" >
+            <a-entity
+                    geometry="primitive: plane;"
+                    material="shader:gif; src:#kusudama;
+                    color:white;
+                    opacity:1"
+                    rotation="-90 0 0">
+            </a-entity>
+            </a-marker>
+            <a-entity camera></a-entity>
+        </a-scene>
 </body>
 </html>
