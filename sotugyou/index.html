@@ -20,24 +20,24 @@
 
         <!-- OBJ形式のCGモデルの読み込み -->
         <a-assets>
-            <a-asset-item id="kusudama" src="sotugyou/kusudama.gif"></a-asset-item> <!-- objファイル -->
+            <a-asset-item id="kusudama" src="kusudama.gif"></a-asset-item> <!-- objファイル -->
         </a-assets>
         <a-assets>
-            <a-asset-item id="kurakka-" src="sotugyou/kurakka-.gif"></a-asset-item> <!-- objファイル -->
+            <a-asset-item id="kurakka-" src="kurakka-.gif"></a-asset-item> <!-- objファイル -->
         </a-assets>
 
         <!-- マーカーを登録（プリセットされている「人」マーカー） -->
         <a-marker type='pattern' url='pattern-soukatsu.patt' marker>
-
+        
             <!-- マーカーの場所に OBJ 形式の 3DCG を置く -->
             <a-entity
             geometry="primitive: plane;"
-            material="shader:gif; src:#kusudama; opacity:1"
+            material="shader:gif; src:#kusudama "
             rotation="-90 0 0">
             </a-entity>
             <a-entity
             geometry="primitive: plane;"
-            material="shader:gif; src:#kurakka-; opacity:1"
+            material="shader:gif; src:#kurakka- "
             rotation="-90 0 0">
             </a-entity>
         </a-marker>
